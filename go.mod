@@ -1,4 +1,4 @@
-module github.com/tutorialedge/go-grpc-beginners-tutorial
+module github.com/PyBastian/Distribuidos_sg
 
 go 1.15
 
