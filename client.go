@@ -7,7 +7,7 @@ import (
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 
-	"https://github.com/PyBastian/Distribuidos_sg/chat"
+	"github.com/PyBastian/Distribuidos_sg/chat"
 )
 
 func main() {
