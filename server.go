@@ -11,7 +11,7 @@ import (
 
 func main() {
 
-	fmt.Println("Go gRPC Beginners Tutorial!")
+	fmt.Println("Server Iniciado")
 
 	lis, err := net.Listen("tcp", fmt.Sprintf(":%d", 9000))
 	if err != nil {
@@ -27,4 +27,5 @@ func main() {
 	if err := grpcServer.Serve(lis); err != nil {
 		log.Fatalf("failed to serve: %s", err)
 	}
+	fmt.Println("Server Final main")
 }
