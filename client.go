@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 
 	"golang.org/x/net/context"
@@ -23,6 +24,8 @@ func main() {
 	message := chat.Message{
 		Body: "Hola soy el Cliente",
 	}
+
+	fmt.Println("Server Iniciado")
 
 	response, err := c.SayHello(context.Background(), &message)
 	if err != nil {
