@@ -20,7 +20,11 @@ func main() {
 
 	c := chat.NewChatServiceClient(conn)
 
-	response, err := c.SayHello(context.Background(), &chat.Message{Body: "Hello From Client!"})
+	message := chat.Message{
+		Body: "Hola soy el Cliente",
+	}
+
+	response, err := c.SayHello(context.Background(), &message)
 	if err != nil {
 		log.Fatalf("Error when calling SayHellosad: %s", err)
 	}
