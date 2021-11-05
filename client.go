@@ -25,7 +25,7 @@ func main() {
 		Body: "Hola soy el Cliente",
 	}
 
-	fmt.Println("Server Iniciado")
+	fmt.Println("Cliente Iniciado")
 
 	response, err := c.SayHello(context.Background(), &message)
 	if err != nil {
