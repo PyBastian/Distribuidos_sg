@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
 
-	"https://github.com/PyBastian/Distribuidos_sg/chat"
+	"github.com/PyBastian/Distribuidos_sg/chat"
 	"google.golang.org/grpc"
 )
 
